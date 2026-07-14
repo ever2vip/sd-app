@@ -1,1 +1,0 @@
-const C='luxoria-v1',F=['./','./index.html','./assets/home.png','./assets/feed.png','./assets/chat.png','./assets/event.png','./assets/profile.png'];self.addEventListener('install',e=>e.waitUntil(caches.open(C).then(c=>c.addAll(F))));self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));
